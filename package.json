@@ -32,6 +32,10 @@
     "postcss-css-variables": "^0.5.0",
     "postcss-custom-media": "^5.0.0",
     "postcss-import": "^7.0.0",
+    "tachyons-max-widths": "^3.1.1",
+    "tachyons-spacing": "^5.0.10",
+    "tachyons-type-scale": "^5.0.3",
+    "tachyons-widths": "^4.0.2",
     "watch": "^0.16.0"
   },
   "scripts": {

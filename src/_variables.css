@@ -14,5 +14,8 @@
 */
 
 :root {
-
+	--heliotrope:   #A316BF;  /* purple    */
+	--orangepeel:   #FF9B00;  /* orange    */
+	--limedspruce:  #33404A;  /* body text */
+	--aquamarine:   #49F8E0;  /* aqua      */
 }

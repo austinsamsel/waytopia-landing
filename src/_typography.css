@@ -1,0 +1,24 @@
+.heliotrope { color: var(--heliotrope) }
+
+.lt { font-family:'Raleway'; }
+
+.fw-100 { font-weight: 100; }
+
+.fh { font-size: 2.5rem; }
+@media screen and (min-width: 768px) {
+	.fh-ns   { font-size: 4.75vw;}
+}
+
+
+
+.f1 { font-size: 3.157rem; line-height:54px; }
+.f2 { font-size: 2.369rem; line-height:48px; }
+.f3 { font-size: 1.777rem; line-height:30px; }
+.f4 { font-size: 1.333rem; line-height:24px; }
+
+.fh .f1, .f2, .f3, .f4 {
+  margin-top:0px;
+  margin-bottom:24px;
+}
+
+.tc { text-align: center; }
