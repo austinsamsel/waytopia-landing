@@ -10,7 +10,7 @@ var conditionals = require('postcss-conditionals')
 var customMedia = require("postcss-custom-media")
 
 // css to be processed
-var css = fs.readFileSync("src/mnml.css", "utf8")
+var css = fs.readFileSync("src/style.css", "utf8")
 
 // process css
 var output = postcss()
@@ -20,16 +20,16 @@ var output = postcss()
   .use(customMedia())
   .use(autoprefixer())
   .process(css, {
-    from: "./src/mnml.css",
-    to: "./css/mnml.css"
+    from: "./src/style.css",
+    to: "./css/style.css"
   })
   .css
 
-fs.writeFile("css/mnml.css", output, 'utf-8')
+fs.writeFile("css/style.css", output, 'utf-8')
 
 // Using Sqwish for CSS
 new compressor.minify({
     type: 'sqwish',
-    fileIn: './css/mnml.css',
-    fileOut: './css/mnml.min.css'
+    fileIn: './css/style.css',
+    fileOut: './css/style.min.css'
 });
