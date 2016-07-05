@@ -10,6 +10,8 @@ input:focus{
 
 ::placeholder  { color: var(--limedspruce); }
 
+.voodoo { color: var(--voodoo); }
+
 .bg-aqua       { background-color: var(--aquamarine); }
 .bg-orangepeel { background-color: var(--orangepeel); }
 .bg-t          { background-color: transparent; }

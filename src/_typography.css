@@ -1,4 +1,4 @@
-html, body { 
+html, body {
 	font-family:Georgia, serif;
 	font-size:18px;
   line-height:1.5;
@@ -14,13 +14,14 @@ p, img, blockquote, button, input {
 .heliotrope { color: var(--heliotrope) }
 .limedspruce { color: var(--limedspruce); }
 
+.avenir { font-family: 'avenir next', avenir, sans-serif; }
 .rale { font-family:'Raleway'; }
 .serif { font-family: Georgia, serif;}
 
 .fw1 { font-weight: 100; }
+.fw3 { font-weight: 300; }
 .fw4 { font-weight: 400; }
 .fw9 { font-weight: 900; }
-
 
 .tracked { letter-spacing: .16em }
 
@@ -34,10 +35,10 @@ p, img, blockquote, button, input {
 
 .f1 { font-size: 4rem; line-height:56px; }
 .f2 { font-size: 2.8rem; line-height:49px; }
-.f3 { font-size: 2.rem; line-height:35px; }
+.f3 { font-size: 2.rem; line-height:42px; }
 .f4 { font-size: 1.4rem; line-height:28px; }
 
-h1, h2, h3, h4, h5, h6, 
+h1, h2, h3, h4, h5, h6,
 .fh .f1, .f2, .f3, .f4 {
   margin-top:0px;
   margin-bottom:24px;
