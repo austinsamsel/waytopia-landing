@@ -1,6 +1,6 @@
 html, body {
 	font-family:Georgia, serif;
-	font-size:18px;
+	font-size:16px;
   line-height:1.5;
 }
 p, img, blockquote, button, input {
@@ -19,8 +19,13 @@ p, img, blockquote, button, input {
 .serif { font-family: Georgia, serif;}
 
 .fw1 { font-weight: 100; }
+.fw2 { font-weight: 200; }
 .fw3 { font-weight: 300; }
 .fw4 { font-weight: 400; }
+.fw5 { font-weight: 500; }
+.fw6 { font-weight: 600; }
+.fw7 { font-weight: 700; }
+.fw8 { font-weight: 800; }
 .fw9 { font-weight: 900; }
 
 .tracked { letter-spacing: .16em }
@@ -32,11 +37,11 @@ p, img, blockquote, button, input {
 }
 
 
-
-.f1 { font-size: 4rem; line-height:56px; }
-.f2 { font-size: 2.8rem; line-height:49px; }
-.f3 { font-size: 2.rem; line-height:42px; }
-.f4 { font-size: 1.4rem; line-height:28px; }
+.hero { font-size: 2.5rem; line-height:56px  }
+.f1   { font-size: 4rem;   line-height:56px; }
+.f2   { font-size: 2.8rem; line-height:49px; }
+.f3   { font-size: 2rem;   line-height:42px; }
+.f4   { font-size: 1.4rem; line-height:28px; }
 
 h1, h2, h3, h4, h5, h6,
 .fh .f1, .f2, .f3, .f4 {

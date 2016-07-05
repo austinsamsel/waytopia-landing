@@ -10,6 +10,7 @@ input:focus{
 
 ::placeholder  { color: var(--limedspruce); }
 
+.white  { color: #fff }
 .voodoo { color: var(--voodoo); }
 
 .bg-aqua       { background-color: var(--aquamarine); }
@@ -18,7 +19,7 @@ input:focus{
 
 .cover   { background-size: cover; }
 
-.br-8    { border-radius:8px; }
+.br-4    { border-radius:4px; }
 .bs-s    { border-style: solid; }
 .bn      { border:none; }
 
@@ -30,6 +31,11 @@ input:focus{
 
 .mlra  { margin-right:auto; margin-left:auto; }
 
+.mv2   { margin-top: 0.5rem; margin-bottom:0.5rem}
+
+.mh0   { margin-left: 0; margin-right:0;}
+
+.pda2  { padding: 0.5rem; }
 .pda3  { padding: 1rem; }
 .pdl3  { padding-left:1rem; }
 .pdb2  { padding-bottom: 0.5rem; }
