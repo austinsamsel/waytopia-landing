@@ -479,6 +479,13 @@ input:focus{
 	outline:none;
 }
 
+.bg-image{
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-attachment: relative;
+ background-size: cover;
+}
+
 ::-webkit-input-placeholder  { color: #656875; }
 
 ::-moz-placeholder  { color: #656875; }
@@ -488,7 +495,7 @@ input:focus{
 ::placeholder  { color: #656875; }
 
 .white  { color: #fff }
-.voodoo { color: #4D3551; }
+.voodoo { color: #514D56; }
 
 .bg-aqua       { background-color: #49F8E0; }
 .bg-orangepeel { background-color: #FF9B00; }
@@ -510,13 +517,28 @@ input:focus{
 
 .mv2   { margin-top: 0.5rem; margin-bottom:0.5rem}
 
+.mt4   { margin-top:2rem }
+.mt6   { margin-top:8rem }
+
 .mh0   { margin-left: 0; margin-right:0;}
+.mb0   { margin-bottom:0; }
+.mb4   { margin-bottom: 2rem }
+.mb45  { margin-bottom: 3rem; }
+.mb5   { margin-bottom: 4rem; }
 
 .pda2  { padding: 0.5rem; }
 .pda3  { padding: 1rem; }
 .pdl3  { padding-left:1rem; }
+.pdb0  { padding-bottom:0;}
 .pdb2  { padding-bottom: 0.5rem; }
 .pdb4  { padding-bottom:2rem; }
+.pdb5  { padding-bottom:4rem; }
+.ph3   { padding-left: 1rem; padding-right:1rem}
+.ph4   { padding-left: 2rem; padding-right:2rem}
+
+@media screen and (min-width: 60em) {
+	.pt5-l { padding-top: 4rem; }
+}
 
 .pr    { position: relative; }
 .pa    { position: absolute; }
@@ -527,9 +549,22 @@ input:focus{
 
 .h-100 { height: 100%; }
 
+@media screen and (min-width: 60em) {
+	.w-50-ns  { width:50%; }
+}
+
+
 .w-100 { width: 100%; }
 @media screen and (min-width: 768px) {
 	.w-75-ns   { width:  75%; }
+}
+
+.df { display: -webkit-box; display: -ms-flexbox; display: flex }
+.fdc { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column }
+.fdr { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row }
+
+@media screen and (min-width: 768px) {
+	.fdr-ns { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row}
 }
 html, body {
 	font-family:Georgia, serif;
@@ -575,6 +610,8 @@ p, img, blockquote, button, input {
 .f2   { font-size: 2.8rem; line-height:49px; }
 .f3   { font-size: 2rem;   line-height:42px; }
 .f4   { font-size: 1.4rem; line-height:28px; }
+.f5   { font-size: 1.05rem }
+.f6   { font-size: 0.8rem}
 
 h1, h2, h3, h4, h5, h6,
 .fh .f1, .f2, .f3, .f4 {
