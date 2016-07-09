@@ -446,7 +446,7 @@ th {
 
 */
 
-:root {  /* purple    */  /* orange    */  /* body text */  /* aqua      */  /* deep purple */
+:root {  /* purple    */  /* orange    */  /* body text */  /* aqua      */  /* deep purple */   /* lighter body text */    /* media query */
 }
 /* ==========================================================================
    MEDIA QUERIES
@@ -496,6 +496,7 @@ input:focus{
 
 .white  { color: #fff }
 .voodoo { color: #514D56; }
+.jumbo  { color: #7B787F; }
 
 .bg-aqua       { background-color: #49F8E0; }
 .bg-orangepeel { background-color: #FF9B00; }
@@ -520,8 +521,14 @@ input:focus{
 .mt4   { margin-top:2rem }
 .mt6   { margin-top:8rem }
 
+@media(min-width:800px){
+	.mh0-ns { margin-right:0;    margin-left:0 }
+	.mh4-ns { margin-right:2rem; margin-left:2rem; }
+}
+
 .mh0   { margin-left: 0; margin-right:0;}
 .mb0   { margin-bottom:0; }
+.mb1   { margin-bottom: 0.25rem }
 .mb4   { margin-bottom: 2rem }
 .mb45  { margin-bottom: 3rem; }
 .mb5   { margin-bottom: 4rem; }
@@ -529,6 +536,7 @@ input:focus{
 .pda2  { padding: 0.5rem; }
 .pda3  { padding: 1rem; }
 .pdl3  { padding-left:1rem; }
+.pdl4  { padding-left:2rem; }
 .pdb0  { padding-bottom:0;}
 .pdb2  { padding-bottom: 0.5rem; }
 .pdb4  { padding-bottom:2rem; }
@@ -536,9 +544,7 @@ input:focus{
 .ph3   { padding-left: 1rem; padding-right:1rem}
 .ph4   { padding-left: 2rem; padding-right:2rem}
 
-@media screen and (min-width: 60em) {
-	.pt5-l { padding-top: 4rem; }
-}
+.pt5   { padding-top: 4rem; }
 
 .pr    { position: relative; }
 .pa    { position: absolute; }
@@ -549,13 +555,14 @@ input:focus{
 
 .h-100 { height: 100%; }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 800px) {
 	.w-50-ns  { width:50%; }
 }
 
 
+.w-90 { width: 90%; }
 .w-100 { width: 100%; }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	.w-75-ns   { width:  75%; }
 }
 
@@ -563,7 +570,7 @@ input:focus{
 .fdc { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column }
 .fdr { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	.fdr-ns { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row}
 }
 html, body {
@@ -610,7 +617,7 @@ p, img, blockquote, button, input {
 .f2   { font-size: 2.8rem; line-height:49px; }
 .f3   { font-size: 2rem;   line-height:42px; }
 .f4   { font-size: 1.4rem; line-height:28px; }
-.f5   { font-size: 1.05rem }
+.f5   { font-size: 1.0rem }
 .f6   { font-size: 0.8rem}
 
 h1, h2, h3, h4, h5, h6,

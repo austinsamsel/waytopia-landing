@@ -19,4 +19,7 @@
 	--limedspruce:  #656875;  /* body text */
 	--aquamarine:   #49F8E0;  /* aqua      */
 	--voodoo:       #514D56;  /* deep purple */
+	--jumbo:        #7B787F;   /* lighter body text */
+
+	--small:        800px;    /* media query */
 }
