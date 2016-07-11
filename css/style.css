@@ -504,6 +504,7 @@ input:focus{
 
 .cover   { background-size: cover; }
 
+.br-0    { border-radius:0; }
 .br-4    { border-radius:4px; }
 .bs-s    { border-style: solid; }
 .bn      { border:none; }
