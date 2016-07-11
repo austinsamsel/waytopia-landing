@@ -14,9 +14,7 @@ p, img, blockquote, button, input {
 .heliotrope { color: var(--heliotrope) }
 .limedspruce { color: var(--limedspruce); }
 
-.avenir { font-family: 'avenir next', avenir, sans-serif; }
-.rale { font-family:'Raleway'; }
-.serif { font-family: Georgia, serif;}
+.avenir { font-family: 'avenir next', avenir, 'Khula', sans-serif; }
 
 .fw1 { font-weight: 100; }
 .fw2 { font-weight: 200; }
