@@ -22,7 +22,9 @@ input:focus{
 
 .white  { color: #fff }
 .voodoo { color: var(--voodoo); }
-.jumbo  { color: var(--jumbo); }
+.jumbo  { color: var(--jumbo);  }
+.scarlet{ color: var(--scarlet) }
+.chartreuse {color:var(--chartreuse) }
 
 .bg-aqua       { background-color: var(--aquamarine); }
 .bg-orangepeel { background-color: var(--orangepeel); }
@@ -77,6 +79,19 @@ input:focus{
 .pa    { position: absolute; }
 
 .db    { display: block; }
+
+
+.faded  {
+	opacity:0;
+	max-height:0px;
+	transition: all 0.33s ease-out;
+  overflow: hidden;
+}
+.fadeIn {
+	opacity:1.0;
+	max-height: 300px;
+	transition: all 0.33s ease-in;
+}
 
 .mb2   { margin-bottom: 0.5rem; }
 

@@ -446,7 +446,7 @@ th {
 
 */
 
-:root {  /* purple    */  /* orange    */  /* body text */  /* aqua      */  /* deep purple */   /* lighter body text */    /* media query */
+:root {  /* purple    */  /* orange    */  /* body text */  /* aqua      */  /* deep purple */   /* lighter body text */  /* red */  /* green */    /* media query */
 }
 /* ==========================================================================
    MEDIA QUERIES
@@ -496,7 +496,9 @@ input:focus{
 
 .white  { color: #fff }
 .voodoo { color: #514D56; }
-.jumbo  { color: #7B787F; }
+.jumbo  { color: #7B787F;  }
+.scarlet{ color: #FF2700 }
+.chartreuse {color:#7bbb1a }
 
 .bg-aqua       { background-color: #49F8E0; }
 .bg-orangepeel { background-color: #FF9B00; }
@@ -551,6 +553,21 @@ input:focus{
 .pa    { position: absolute; }
 
 .db    { display: block; }
+
+
+.faded  {
+	opacity:0;
+	max-height:0px;
+	-webkit-transition: all 0.33s ease-out;
+	transition: all 0.33s ease-out;
+  overflow: hidden;
+}
+.fadeIn {
+	opacity:1.0;
+	max-height: 300px;
+	-webkit-transition: all 0.33s ease-in;
+	transition: all 0.33s ease-in;
+}
 
 .mb2   { margin-bottom: 0.5rem; }
 

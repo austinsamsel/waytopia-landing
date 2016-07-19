@@ -25,7 +25,7 @@
 
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup" style="width:282px; margin:0 auto 4rem">
-            <form action="//trippitch.us12.list-manage.com/subscribe/post?u=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="//trippitch.us12.list-manage.com/subscribe/post-json?u=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691" method="GET" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll">
 
                 <div class="mc-field-group field" >
@@ -34,8 +34,8 @@
                   <div id="confirmation-msg"></div>
                 </div>
                 <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
+                  <div class="response avenir jumbo faded" id="mce-error-response"></div>
+                  <div class="response avenir jumbo faded" id="mce-success-response"></div>
                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                   <input type="text" name="b_60a267c1d4bc0f7ce90f04669_9bef743691" tabindex="-1" value="">
@@ -122,5 +122,58 @@
       <p class="avenir jumbo f6">© Copyright Waytopia, 2016. Questions? <a href="mailto:contactus@waytopia.com" class="orangepeel">Email us</a>.</p>
 
     </footer>
+
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            // I only have one form on the page but you can be more specific if need be.
+            var $form = $('#mc-embedded-subscribe-form');
+
+            if ( $form.length > 0 ) {
+                $('#mc-embedded-subscribe-form input[type="submit"]').bind('click', function ( event ) {
+                    if ( event ) event.preventDefault();
+                    $('#mce-success-response, #mce-error-response')
+                      .removeClass('fadeIn')
+                      .addClass('faded')
+                    // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+                    if ( true ) { register($form); }
+                });
+            }
+        });
+
+        function register($form) {
+            $.ajax({
+                type: 'GET',
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                cache       : false,
+                dataType    : 'jsonp',
+                jsonp       : 'c', // trigger MailChimp to return a JSONP response
+                contentType: "application/json; charset=utf-8",
+                error       : function(err) {
+                  console.log("Could not connect to the registration server. Please try again later.");
+                  $('#mce-error-response')
+                    .html('<span class="scarlet">Oops! </span>' + data.msg)
+                    .toggleClass('faded fadeIn');
+                },
+                success     : function(data) {
+                    if (data.result != "success") {
+                        console.log(data)
+                        $('#mce-error-response')
+                          .html('<span class="scarlet">Oops! </span>' + data.msg)
+                          .toggleClass('faded fadeIn');
+                    } else {
+                        // It worked, carry on...
+                        console.log(data)
+                        $('#mce-success-response')
+                          .html('<span class="chartreuse">Nice! </span>' + 'Almost finished... To confirm, please click the link in the email we just sent you.')
+                          .toggleClass('faded fadeIn');
+                        $('#mc-embedded-subscribe-form')[0].reset();
+
+                    }
+                }
+            });
+        }
+    </script>
   </body>
 </html>
